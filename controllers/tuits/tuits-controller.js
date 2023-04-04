@@ -4,6 +4,7 @@ let tuits = posts;
 const createTuit = (req, res) => {
      const newTuit = req.body;
      newTuit.username = "SpaceX";
+     newTuit.handle = "@spacex";
      newTuit.image = "spacex.png";
      newTuit._id = (new Date()).getTime()+'';
      newTuit.likes = 0;
