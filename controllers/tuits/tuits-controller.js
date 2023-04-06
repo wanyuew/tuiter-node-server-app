@@ -8,6 +8,8 @@ const createTuit = (req, res) => {
      newTuit.image = "spacex.png";
      newTuit._id = (new Date()).getTime()+'';
      newTuit.likes = 0;
+     newTuit.dislikes = 0;
+     newTuit.disliked = false;
      newTuit.liked = false;
      tuits.push(newTuit);
      res.json(newTuit);
